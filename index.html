@@ -16,7 +16,17 @@
 </head>
 
 <body>
+<audio id="bgMusic" loop>
+    <source src="music.mpeg" type="audio/mpeg">
+</audio>
 
+<script>
+const music = document.getElementById("bgMusic");
+
+document.body.addEventListener("click", function () {
+    music.play();
+}, { once: true });
+</script>
     <!-- Main Section -->
     <section class="hero">
 
