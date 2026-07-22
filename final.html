@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Forever in My Heart ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Poppins,sans-serif;
+
+    background:url("background1.jpeg") center center/cover no-repeat fixed;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    overflow:hidden;
+    position:relative;
+
+}
+
+/* Dark Overlay */
+
+body::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.72);
+
+    top:0;
+    left:0;
+
+}
+
+/* Main Card */
+
+.container{
+
+    position:relative;
+    z-index:2;
+
+    width:90%;
+    max-width:850px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:25px;
+
+    padding:60px;
+
+    text-align:center;
+
+    color:white;
+
+    box-shadow:0 10px 40px rgba(0,0,0,.35);
+
+    animation:fadeIn 2s;
+
+}
+
+h1{
+
+    font-size:60px;
+
+    margin-bottom:25px;
+
+    color:#ffb6c1;
+
+}
+
+p{
+
+    font-size:22px;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+}
+
+.signature{
+
+    margin-top:40px;
+
+    font-size:28px;
+
+    color:#ffd6e0;
+
+    font-weight:bold;
+
+}
+
+.end{
+
+    margin-top:40px;
+
+    font-size:26px;
+
+    color:#ffc0cb;
+
+}
+
+/* Floating Hearts */
+
+.heart{
+
+    position:absolute;
+
+    color:#ff6b81;
+
+    font-size:28px;
+
+    animation:float 10s linear infinite;
+
+    opacity:.7;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(100vh) scale(.5);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120px) scale(1.4);
+
+opacity:0;
+
+}
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+padding:35px;
+
+}
+
+h1{
+
+font-size:40px;
+
+}
+
+p{
+
+font-size:18px;
+
+}
+
+.signature{
+
+font-size:22px;
+
+}
+
+.end{
+
+font-size:20px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>❤️ Thank You ❤️</h1>
+<p>For You, Ruchi ❤️</p>
+
+Some people come into our lives and leave memories. You came into mine and became a part of me.
+
+Thank you for every smile, every lesson, every scolding, every late-night conversation, and every moment that made these years so unforgettable.
+
+As you begin this new chapter in Mysuru, I hope you achieve everything you've ever dreamed of. I'll always be proud of you, no matter how far apart we are.
+
+Just promise me one thing—don't forget us, don't forget me. Our bond is something I'll always treasure, and I hope it always remains just as special.
+
+No matter how many miles separate us, you'll always be my home away from home, and a part of my heart will always belong with you.
+
+With endless love, countless memories, and wishes for your brightest future... ❤️
+
+
+
+</p>
+
+<div class="signature">
+
+🌙 Every ending is the start of something beautiful. Until we meet again.🌙
+</div>
+
+
+</div>
+
+<script>
+
+for(let i=0;i<35;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"%";
+
+heart.style.animationDuration=(6+Math.random()*8)+"s";
+
+heart.style.fontSize=(18+Math.random()*25)+"px";
+
+heart.style.animationDelay=Math.random()*5+"s";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
+
+</html>

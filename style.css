@@ -1,0 +1,311 @@
+/* Remove default spacing */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Full page */
+
+body{
+
+    margin:0;
+
+    font-family:"Poppins",sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+/* Background section */
+.hero{
+
+    width:100%;
+    min-height:100vh;
+
+    background-image:url("background1.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    position:relative;
+    padding:80px 20px;
+
+}
+/* Dark transparent layer */
+.background{
+    background:url("background.jpg") center center/cover no-repeat;
+}
+.details{
+    display:none;
+    margin-top:20px;
+}
+
+.memory-image{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    border-radius:15px;
+    margin:20px 0;
+}
+
+.memory h3{
+    cursor:pointer;
+}
+.overlay{
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.55);
+
+}
+/* Center everything */
+
+.content{
+
+    position:relative;
+
+    z-index:2;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+/* Moon */
+
+.moon{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+/* Heading */
+
+h1{
+
+    font-size:64px;
+
+    margin-bottom:20px;
+
+}
+
+/* Paragraph */
+
+p{
+
+    font-size:22px;
+
+    max-width:700px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+/* Button */
+
+button{
+
+    background:#ff4d6d;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 40px;
+
+    font-size:20px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+/* Hover Effect */
+
+button:hover{
+
+    transform:scale(1.08);
+
+    background:#ff2b55;
+
+}
+
+/* Story Page */
+
+
+.story-content h1{
+
+    font-size:35px;
+
+    letter-spacing:3px;
+
+    opacity:0.8;
+
+}
+
+
+.story-content h2{
+
+    font-size:55px;
+
+    margin-bottom:25px;
+
+}
+
+
+.timeline{
+
+    margin-top:50px;
+
+    width:80%;
+
+}
+
+
+.memory{
+
+    background:rgba(255,255,255,0.12);
+
+    padding:25px;
+
+    margin:25px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+
+    transition:0.4s;
+
+}
+
+
+.memory:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(255,255,255,0.22);
+
+}
+
+
+.memory h3{
+
+    color:#ffb3c6;
+
+    font-size:35px;
+
+    margin-bottom:10px;
+
+}
+
+
+.memory p{
+
+    font-size:20px;
+
+}
+.next-button{
+    width:100%;
+    text-align:center;
+    margin-top:60px;
+    margin-bottom:60px;
+}
+
+.next-button button{
+    background:#ff4d6d;
+    color:white;
+    border:none;
+    padding:18px 40px;
+    font-size:20px;
+    border-radius:50px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.next-button button:hover{
+    background:#ff2b55;
+    transform:scale(1.08);
+}
+.video-button{
+
+    text-align:center;
+    margin-top:60px;
+    margin-bottom:60px;
+
+}
+.memory-image{
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin:20px 0;
+
+    display:block;
+
+}
+
+.video-button button{
+
+    background:#ff4d6d;
+    color:white;
+    border:none;
+    padding:18px 45px;
+    font-size:20px;
+    border-radius:50px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.video-button button:hover{
+
+    background:#ff2b55;
+    transform:scale(1.08);
+
+}
+.story-content{
+
+    position:relative;
+
+    z-index:2;
+
+    min-height:100vh;
+
+    padding:100px 20px;
+
+}
+
